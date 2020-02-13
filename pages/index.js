@@ -14,7 +14,7 @@ class Index extends React.Component {
       isFlipping: false
     }
 
-    this.roles = ['Developer', 'Tech Lover', 'Team Player', 'Course Creator', 'React.js', 'Angular'];
+    this.roles = ['Digital Specialist', 'Tech Lover', 'React.js', 'Marketing Manager'];
   }
 
   componentDidMount() {
@@ -42,7 +42,7 @@ class Index extends React.Component {
     return (
       <BaseLayout className={`cover ${isFlipping ? 'cover-1' : 'cover-0'}`} {...this.props.auth}
                   headerType="index"
-                  title="Filip Jerga - Portfolio">
+                  title="Hung Nguyen | Shiki Portfolio">
         <div className="main-section">
           <div className="background-image">
             <img src="/static/images/background-index.png" />
@@ -54,7 +54,7 @@ class Index extends React.Component {
                   <div className={`flipper ${isFlipping ? 'isFlipping' : ''}`}>
                     <div className="front">
                       <div className="hero-section-content">
-                        <h2> Full Stack Web Developer </h2>
+                        <h2> Digital Marketing Specialist </h2>
                         <div className="hero-section-content-intro">
                           Have a look at my portfolio and job history.
                         </div>
@@ -68,7 +68,7 @@ class Index extends React.Component {
                       <div className="hero-section-content">
                         <h2> Get Your Projects Done </h2>
                         <div className="hero-section-content-intro">
-                          Profesional and top quality service in web development.
+                          Profesional and top quality service in digital marketer.
                         </div>
                       </div>
                       <img alt="Guy programming welcome picture" className="image" src="/static/images/section-2.jpg"/>
@@ -83,8 +83,7 @@ class Index extends React.Component {
                 <div className="hero-welcome-text">
                   <h1>
                     { isAuthenticated && <span> <b> {user.name} </b> </span> }
-                    Welcome to the portfolio website of Filip Jerga.
-                    Get informed, collaborate and discover projects I was working on through the years!
+                    Welcome to the portfolio website of Hung Nguyen.
                   </h1>
                 </div>
                 <Typed
@@ -108,9 +107,6 @@ class Index extends React.Component {
               </Col>
             </Row>
           </Container>
-          <span className="service-link">Vector illustration credit:{' '}
-            <a href="https://www.Vecteezy.com/">vecteezy.com</a>
-          </span>
         </div>
       </BaseLayout>
     )

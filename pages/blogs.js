@@ -53,7 +53,7 @@ class Blogs extends React.Component {
       <BaseLayout {...this.props.auth}
                   headerType={'landing'}
                   className="blog-listing-page"
-                  title="Filip Jerga - Newest Blogs to Read">
+                  title="Hung Nguyen - Newest Blogs to Read">
         <div className="masthead" style={{"backgroundImage": "url('/static/images/home-bg.jpg')"}}>
           <div className="overlay"></div>
           <Container>
